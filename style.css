@@ -389,8 +389,9 @@ figure {
 div.figure-search-text {
     position: absolute;
     z-index: -1;
-    top: 40%;
-    left: 20%;
+    top: 48%;
+    left: 36%;
+    font-size: 4px
 }
 
 img:hover {
