@@ -35,11 +35,6 @@ function searchAltText() {
             // Create an anchor link to the image and add an event listener to scroll to it
             var link = document.createElement('a');
             link.textContent = section.id + ': ' + image.alt; // + closest_class.className;
-            // if (closest_class.className === "splash") {
-            //     link.textContent += " (splash)";
-            // } else {
-            //     link.textContent += " (main)";
-            // }
 
             link.className = 'search-result-link';
             link.href = '#' + section.id;
