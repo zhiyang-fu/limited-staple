@@ -70,22 +70,22 @@
 </div>
 </div>
 
-<a name="jumplist"></a>
 <h1>Jump List</h1>
 <ul>
     <li><a href="#BR">RG (Gruul) </a></li>
     <li><a href="#RG">BG (Golgari) </a></li>
     <li><a href="#BG">BR (Rakdos) </a></li>
     <li><a href="#UG">UG (Simic) </a></li>
-    <li><a href="#BG">UR (Izzet) </a></li>
-    <li><a href="#BG">UB (Dimir) </a></li>
-    <li><a href="#BR">WG (Selesnya) </a></li>
-    <li><a href="#BR">WR (Boros) </a></li>
-    <li><a href="#BR">WB (Orzhov) </a></li>
-    <li><a href="#BR">WU (Azorius) </a></li>
+    <li><a href="#UR">UR (Izzet) </a></li>
+    <li><a href="#UB">UB (Dimir) </a></li>
+    <li><a href="#WG">WG (Selesnya) </a></li>
+    <li><a href="#WR">WR (Boros) </a></li>
+    <li><a href="#WB">WB (Orzhov) </a></li>
+    <li><a href="#WU">WU (Azorius) </a></li>
 </ul>
+
 <section id="RG">
-<h2>RG<a href='#jumplist'>  </a></h2>
+<h2>RG<a href='#searchBar'>  </a></h2>
 <p class="template">
     <script>generateTemplateHTML(`${set_format}`,'RG')</script>
 </p>
@@ -102,7 +102,7 @@
 </section>
 
 <section id="BG">
-<h2>BG<a href='#jumplist'> ^</a></h2>
+<h2>BG<a href='#searchBar'> ^</a></h2>
 <p class="template">
     <script>generateTemplateHTML(`${set_format}`,'BG')</script>
 </p>
@@ -119,7 +119,7 @@
 </section>
 
 <section id="BR">
-<h2>BR<a href='#jumplist'>^</a></h2>
+<h2>BR<a href='#searchBar'>^</a></h2>
 <!-- template -->
 <p class="template">
     <script>generateTemplateHTML(`${set_format}`,'BR')</script>
@@ -137,7 +137,7 @@
 </section>
 
 <section id="UG">
-<h2>UG<a href='#jumplist'> ^</a></h2>
+<h2>UG<a href='#searchBar'> ^</a></h2>
 <p class="template">
     <script>generateTemplateHTML(`${set_format}`,'UG')</script>
 </p>
@@ -153,8 +153,25 @@
 </p>
 </section>
 
+<section id="UR">
+<h2>UR<a href='#searchBar'> ^</a></h2>
+<p class="template">
+    <script>generateTemplateHTML(`${set_format}`,'UR')</script>
+</p>
+
+<!-- top5 -->
+<p class="top5">
+    <script>generateTop5HTML(`${set_format}`,'UR')</script>
+</p>
+
+<!-- splash -->
+<p class="splash">
+    <script>generateSplashHTML(`${set_format}`,'UR')</script>
+</p>
+</section>
+
 <section id="UB">
-<h2>UB<a href='#jumplist'> ^</a></h2>
+<h2>UB<a href='#searchBar'> ^</a></h2>
 <p class="template">
     <script>generateTemplateHTML(`${set_format}`,'UB')</script>
 </p>
@@ -171,7 +188,7 @@
 </section>
 
 <section id="WG">
-<h2>WG<a href='#jumplist'> ^</a></h2>
+<h2>WG<a href='#searchBar'> ^</a></h2>
 <p class="template">
     <script>generateTemplateHTML(`${set_format}`,'WG')</script>
 </p>
@@ -188,7 +205,7 @@
 </section>
 
 <section id="WR">
-<h2>WR<a href='#jumplist'> ^</a></h2>
+<h2>WR<a href='#searchBar'> ^</a></h2>
 <p class="template">
     <script>generateTemplateHTML(`${set_format}`,'WR')</script>
 </p>
@@ -205,7 +222,7 @@
 </section>
 
 <section id="WB">
-<h2>WB<a href='#jumplist'> ^</a></h2>
+<h2>WB<a href='#searchBar'> ^</a></h2>
 <p class="template">
     <script>generateTemplateHTML(`${set_format}`,'WB')</script>
 </p>
@@ -222,7 +239,7 @@
 </section>
 
 <section id="WU">
-<h2>WU<a href='#jumplist'> ^</a></h2>
+<h2>WU<a href='#searchBar'> ^</a></h2>
 <p class="template">
     <script>generateTemplateHTML(`${set_format}`,'WU')</script>
 </p>
