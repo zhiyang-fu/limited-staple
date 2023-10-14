@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript"
+          src="display_card_image.js">
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <title>Limited Staple</title>
+</head>
+
+<body>
+
+<nav class="menu">
+<div class="nav-left">
+ <ul>
+    <li><a href="index.html">About</a></li>
+  </ul>
+</div>
+<div class="nav-right">
+ <ul>
+     <li><a href="tradDraft.html?set=LTR">LTR</a></li>
+     <li><a href="tradDraft.html?set=WOE">WOE</a></li>
+  </ul>
+</div>
+</nav>
+<article>
+<script>
+    // Get the value of the query parameter "param" from the current URL
+    var urlParams = new URLSearchParams(window.location.search);
+    var setValue  = urlParams.get("set");
+
+    // Check if the parameter exists and display it
+    //if (setValue !== null) {
+    //    alert("The value of the 'set' parameter is: " + setValue);
+    //} else {
+    //    alert("The 'set' parameter is not present in the URL.");
+    //}
+    var set_format = setValue + '/TradDraft'
+</script>
+
+<style>
+/* Style for the right side container */
+.right-container {
+    float: right;
+    margin-right: 10px;
+}
+
+/* Clear the float */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+</style>
+
+<div class="clearfix">
+<div class="right-container">
+<!-- <input type="text" id="searchBar" placeholder="Search Alt Text"> -->
+<input type="text" id="searchBar" placeholder="Search a Card" onkeydown="handleSearchKeyPress(event)">
+    <button onclick="searchAltText()">Return Usage</button>
+    <div id="searchResults">
+        <!-- Search results will be displayed here -->
+    </div>
+</div>
+</div>
+
+<a name="jumplist"></a>
+<h1>Jump List</h1>
+<ul>
+    <li><a href="#BR">RG (Gruul) </a></li>
+    <li><a href="#RG">BG (Golgari) </a></li>
+    <li><a href="#BG">BR (Rakdos) </a></li>
+    <li><a href="#UG">UG (Simic) </a></li>
+    <li><a href="#BG">UR (Izzet) </a></li>
+    <li><a href="#BG">UB (Dimir) </a></li>
+    <li><a href="#BR">WG (Selesnya) </a></li>
+    <li><a href="#BR">WR (Boros) </a></li>
+    <li><a href="#BR">WB (Orzhov) </a></li>
+    <li><a href="#BR">WU (Azorius) </a></li>
+</ul>
+<section id="RG">
+<h2>RG<a href='#jumplist'>  </a></h2>
+<p class="template">
+    <script>generateTemplateHTML(`${set_format}`,'RG')</script>
+</p>
+
+<!-- top5 -->
+<p class="top5">
+    <script>generateTop5HTML(`${set_format}`,'RG')</script>
+</p>
+
+<!-- splash -->
+<p class="splash">
+    <script>generateSplashHTML(`${set_format}`,'RG')</script>
+</p>
+</section>
+
+<section id="BG">
+<h2>BG<a href='#jumplist'> ^</a></h2>
+<p class="template">
+    <script>generateTemplateHTML(`${set_format}`,'BG')</script>
+</p>
+
+<!-- top5 -->
+<p class="top5">
+    <script>generateTop5HTML(`${set_format}`,'BG')</script>
+</p>
+
+<!-- splash -->
+<p class="splash">
+    <script>generateSplashHTML(`${set_format}`,'BG')</script>
+</p>
+</section>
+
+<section id="BR">
+<h2>BR<a href='#jumplist'>^</a></h2>
+<!-- template -->
+<p class="template">
+    <script>generateTemplateHTML(`${set_format}`,'BR')</script>
+</p>
+
+<!-- top5 -->
+<p class="top5">
+    <script>generateTop5HTML(`${set_format}`,'BR')</script>
+</p>
+
+<!-- splash -->
+<p class="splash">
+    <script>generateSplashHTML(`${set_format}`,'BR')</script>
+</p>
+</section>
+
+<section id="UG">
+<h2>UG<a href='#jumplist'> ^</a></h2>
+<p class="template">
+    <script>generateTemplateHTML(`${set_format}`,'UG')</script>
+</p>
+
+<!-- top5 -->
+<p class="top5">
+    <script>generateTop5HTML(`${set_format}`,'UG')</script>
+</p>
+
+<!-- splash -->
+<p class="splash">
+    <script>generateSplashHTML(`${set_format}`,'UG')</script>
+</p>
+</section>
+
+<section id="UB">
+<h2>UB<a href='#jumplist'> ^</a></h2>
+<p class="template">
+    <script>generateTemplateHTML(`${set_format}`,'UB')</script>
+</p>
+
+<!-- top5 -->
+<p class="top5">
+    <script>generateTop5HTML(`${set_format}`,'UB')</script>
+</p>
+
+<!-- splash -->
+<p class="splash">
+    <script>generateSplashHTML(`${set_format}`,'UB')</script>
+</p>
+</section>
+
+<section id="WG">
+<h2>WG<a href='#jumplist'> ^</a></h2>
+<p class="template">
+    <script>generateTemplateHTML(`${set_format}`,'WG')</script>
+</p>
+
+<!-- top5 -->
+<p class="top5">
+    <script>generateTop5HTML(`${set_format}`,'WG')</script>
+</p>
+
+<!-- splash -->
+<p class="splash">
+    <script>generateSplashHTML(`${set_format}`,'WG')</script>
+</p>
+</section>
+
+<section id="WR">
+<h2>WR<a href='#jumplist'> ^</a></h2>
+<p class="template">
+    <script>generateTemplateHTML(`${set_format}`,'WR')</script>
+</p>
+
+<!-- top5 -->
+<p class="top5">
+    <script>generateTop5HTML(`${set_format}`,'WR')</script>
+</p>
+
+<!-- splash -->
+<p class="splash">
+    <script>generateSplashHTML(`${set_format}`,'WR')</script>
+</p>
+</section>
+
+<section id="WB">
+<h2>WB<a href='#jumplist'> ^</a></h2>
+<p class="template">
+    <script>generateTemplateHTML(`${set_format}`,'WB')</script>
+</p>
+
+<!-- top5 -->
+<p class="top5">
+    <script>generateTop5HTML(`${set_format}`,'WB')</script>
+</p>
+
+<!-- splash -->
+<p class="splash">
+    <script>generateSplashHTML(`${set_format}`,'WB')</script>
+</p>
+</section>
+
+<section id="WU">
+<h2>WU<a href='#jumplist'> ^</a></h2>
+<p class="template">
+    <script>generateTemplateHTML(`${set_format}`,'WU')</script>
+</p>
+
+<!-- top5 -->
+<p class="top5">
+    <script>generateTop5HTML(`${set_format}`,'WU')</script>
+</p>
+
+<!-- splash -->
+<p class="splash">
+    <script>generateSplashHTML(`${set_format}`,'WU')</script>
+</p>
+</section>
+
+</article>
+
+
+<footer>
+    <!-- <p>Everything should be made as simple as possible, but not simpler</br> -->
+    <!-- <p>All things are difficult before they are easy. — Thomas Fuller</br> -->
+    <p>Do one thing; Do it well.</br>
+    <!-- <p>© 2022-2022 Zhiyang Fu</br> -->
+    Created with <a href="https://www.romanzolotarev.com/ssg.html">ssg5</a>
+    </p>
+</footer>
+
+</body>
+</html>
