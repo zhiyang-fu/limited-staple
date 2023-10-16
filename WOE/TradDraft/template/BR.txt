@@ -1,21 +1,21 @@
 Deck
+1 Redcap Gutter-Dweller
+1 Lord Skitter, Sewer King
+1 Totentanz, Swarm Piper
+1 Callous Sell-Sword
+1 Twisted Sewer-Witch
+1 Twisted Fealty
+1 Lord Skitter's Butcher
 1 Ratcatcher Trainee
 1 Edgewall Pack
 1 Grand Ball Guest
 1 Harried Spearguard
 1 Torch the Tower
-1 Candy Grapple
-1 Hopeless Nightmare
 1 Voracious Vermin
 1 Cut In
-1 Totentanz, Swarm Piper
-1 Rat Out
-1 Sweettooth Witch
+1 Candy Grapple
 1 Mintstrosity
-1 Callous Sell-Sword
-1 Minecart Daredevil
-1 Flick a Coin
-1 Conceited Witch
-1 Gingerbrute
-1 Witch's Mark
-1 Gnawing Crescendo
+1 Hopeless Nightmare
+1 Rat Out
+1 Redcap Thief
+1 Sweettooth Witch

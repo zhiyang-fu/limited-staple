@@ -1,21 +1,21 @@
 Deck
-2 Hollow Scavenger
-2 Hamlet Glutton
-2 Mintstrosity
-2 Sweettooth Witch
-1 Hopeless Nightmare
+1 Faunsbane Troll
+1 Restless Cottage
 1 Greta, Sweettooth Scourge
-1 Redtooth Genealogist
-1 Agatha's Champion
+1 Gingerbread Hunter
+1 Up the Beanstalk
+1 Welcome to Sweettooth
+1 High Fae Negotiator
+2 Hollow Scavenger
+1 Mintstrosity
+1 Sweettooth Witch
+1 Hamlet Glutton
 1 Candy Grapple
+1 Curse of the Werefox
+1 Brave the Wilds
+1 Rootrider Faun
+1 Hopeless Nightmare
 1 Conceited Witch
 1 Feed the Cauldron
-1 Curse of the Werefox
-1 Rat Out
-1 Up the Beanstalk
-1 Gingerbread Hunter
-1 Scream Puff
-1 The Witch's Vanity
-1 Troublemaker Ouphe
 1 Ferocious Werefox
-1 Spiteful Hexmage
+1 Shatter the Oath

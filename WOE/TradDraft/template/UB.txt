@@ -1,21 +1,21 @@
 Deck
-2 Spell Stutter
-2 Barrow Naughty
-1 Candy Grapple
+1 Likeness Looter
+1 Talion's Messenger
 1 Obyra, Dreaming Duelist
-1 Hopeless Nightmare
-1 Sweettooth Witch
-1 Into the Fae Court
+1 Spellscorn Coven
+1 Picklock Prankster
+1 Faerie Fencing
+1 Faerie Dreamthief
+2 Barrow Naughty
 1 Johann's Stopgap
-1 Beluna's Gatekeeper
+1 Spell Stutter
+1 Hopeless Nightmare
+1 Candy Grapple
+1 Into the Fae Court
 1 Ice Out
 1 Mintstrosity
-1 Picklock Prankster
-1 Shatter the Oath
-1 Quick Study
-1 Faerie Fencing
-1 Evolving Wilds
-1 Diminisher Witch
-1 Taken by Nightmares
+1 Sweettooth Witch
+1 Beluna's Gatekeeper
+1 Feed the Cauldron
+1 Obyra's Attendants
 1 Aquatic Alchemist
-1 Spellscorn Coven

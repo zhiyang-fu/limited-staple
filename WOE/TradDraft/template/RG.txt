@@ -1,21 +1,21 @@
 Deck
-2 Hamlet Glutton
-1 Torch the Tower
-1 Howling Galefang
-1 Grand Ball Guest
-1 Hollow Scavenger
-1 Edgewall Pack
-1 Grabby Giant
-1 Curse of the Werefox
-1 Territorial Witchstalker
-1 Troublemaker Ouphe
-1 Ruby, Daring Tracker
+1 Gruff Triplets
+1 Elvish Archivist
 1 Picnic Ruiner
-1 Minecart Daredevil
-1 Hearth Elemental
-1 Verdant Outrider
-1 Rootrider Faun
+1 Ruby, Daring Tracker
+1 Tough Cookie
+1 Howling Galefang
+1 Welcome to Sweettooth
 1 Cut In
-1 Monstrous Rage
-1 Witchstalker Frenzy
+1 Hollow Scavenger
+1 Minecart Daredevil
+1 Grabby Giant
+1 Torch the Tower
+1 Hamlet Glutton
+1 Curse of the Werefox
 1 Ferocious Werefox
+1 Brave the Wilds
+1 Redcap Thief
+1 Rootrider Faun
+1 Ratcatcher Trainee
+1 Grand Ball Guest

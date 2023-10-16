@@ -1,21 +1,21 @@
 Deck
-1 Stockpiling Celebrant
+1 Yenna, Redtooth Regent
+1 Spellbook Vendor
+1 Woodland Acolyte
+1 Syr Armont, the Redeemer
+1 The Princess Takes Flight
+1 Cursed Courtier
+1 Redtooth Vanguard
+2 Stockpiling Celebrant
 1 Hopeful Vigil
+1 Besotted Knight
 1 Curse of the Werefox
 1 Cooped Up
-1 Kellan's Lightblades
-1 Tough Cookie
-1 Ferocious Werefox
+1 Hamlet Glutton
+1 Redtooth Genealogist
 1 Archon's Glory
 1 Rootrider Faun
-1 Knight of Doves
-1 Besotted Knight
-1 The Princess Takes Flight
-1 Hamlet Glutton
-1 Woodland Acolyte
-1 Redtooth Genealogist
-1 Tuinvale Guide
-1 Cursed Courtier
-1 Utopia Sprawl
-1 Armory Mice
-1 Spellbook Vendor
+1 Ferocious Werefox
+1 Kellan's Lightblades
+1 Troublemaker Ouphe
+1 Hollow Scavenger

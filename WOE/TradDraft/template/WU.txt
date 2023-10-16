@@ -1,21 +1,21 @@
 Deck
-2 Johann's Stopgap
-2 Hopeful Vigil
-2 Cooped Up
-2 Stockpiling Celebrant
-2 Threadbind Clique
-1 Diminisher Witch
-1 Hatching Plans
-1 Into the Fae Court
-1 Beluna's Gatekeeper
-1 Spell Stutter
-1 Glass Casket
-1 Ice Out
+1 Extraordinary Journey
+1 Horned Loch-Whale
+1 Threadbind Clique
 1 Sharae of Numbing Depths
-1 Kellan's Lightblades
-1 Tenacious Tomeseeker
+1 Hatching Plans
 1 Bitter Chill
-1 The Princess Takes Flight
-1 Quick Study
+1 Icewrought Sentry
+1 Johann's Stopgap
+1 Hopeful Vigil
+1 Kellan's Lightblades
+1 Cooped Up
+1 Stockpiling Celebrant
+1 Into the Fae Court
+1 Spell Stutter
+1 Ice Out
+1 Beluna's Gatekeeper
 1 Vantress Transmuter
-1 Grasp of Fate
+1 Archon's Glory
+1 Aquatic Alchemist
+1 Diminisher Witch
