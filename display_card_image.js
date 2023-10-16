@@ -54,7 +54,7 @@ function searchAltText() {
 
 function generateTemplateHTML(set_format,color) {
     var selector = `#${color} .template`
-    fetch(`${set_format}/template_decks.json`)
+    fetch(`${set_format}/template/template_decks.json`)
         .then(response => response.json())
         .then(data => {
             console.log(data[color]);
@@ -70,7 +70,7 @@ function generateTemplateHTML(set_format,color) {
 function generateTop5HTML(set_format,color) {
     let selector = `#${color} .top5`
     console.log(selector)
-    fetch(`${set_format}/${color}.json`)
+    fetch(`${set_format}/template/${color}.json`)
         .then(response => response.json())
         .then(data => {
             console.log(data.num_decks);
@@ -78,49 +78,91 @@ function generateTop5HTML(set_format,color) {
             let num = data.num_decks
             const elem = document.querySelector(selector)
             elem.innerHTML += `
-            Top 5 most frequent cards (and two most associated cards of each) in ${num}/500 decks
+            Top 20 most frequent cards (3 rare or above, 7 uncommon, and 10 common) in ${num} decks
             <br>
             `;
 
-            //top 5 cards
-            console.log(data.top5cards);
-            let top5 = data.top5cards
-            for (var key of Object.keys(top5)){
-                console.log(key,top5[key]);
-                let num = top5[key]
-                let imgLink = `${set_format.substring(0,3)}/card/${key}.png`
-                    const elem = document.querySelector(selector)
-                    elem.innerHTML += `
-                    <figure>
-                    <div class='figure-search-text'>"${key}"</div>
-                    <img src="${imgLink}" alt="${key} ${num}% (top 5)" style="width: 18vw; min-width: 100px;">
-                    <figcaption>${num}%</figcaption>
-                    </figure>
-                    `;
+            //top 3 rare
+            console.log(data.topcards_rare);
+            let top_rare = data.topcards_rare;
+            var keys = Object.keys(top_rare);
+            var n;
+            if (keys.length < 3) {
+                n = keys.length;
+            } else {
+                n = 3;
             }
-
-            document.querySelector(selector).innerHTML += `<br>`;
-
-            // synergy cards
-            let synergy_list = data.synergy_list
-            // let cardlist_len = synergy_list[0].length
-            for (var j=0; j<synergy_list.length; j++) {
-                for (var i=0; i<2; i++) {
-                // console.log(synergy_list[j][i][0])
-                let key = synergy_list[j][i][0]
-                let num = synergy_list[j][i][1]
+            // for (var key of Object.keys(top_rare)){
+            for (var i=0; i < n; i++) {
+                var key = keys[i];
+                console.log(key,top_rare[key]);
+                let num = top_rare[key]
                 let imgLink = `${set_format.substring(0,3)}/card/${key}.png`
                     const elem = document.querySelector(selector)
                     elem.innerHTML += `
                     <figure>
                     <div class='figure-search-text'>"${key}"</div>
-                    <img src="${imgLink}" alt="${key} ${num}% (main)" style="width: 8.9vw; min-width: 45px;">
+                    <img src="${imgLink}" alt="${key} ${num}% (rare #${i+1})" style="width: 8.9vw; min-width: 45px;">
                     <figcapsmall>${num}%</figcapsmall>
                     </figure>
                     `;
-                }
+            }
+
+            //top 7 uncommon
+            console.log(data.topcards_uncommon);
+            let top_uncommon = data.topcards_uncommon;
+            var keys = Object.keys(top_uncommon);
+            var n;
+            if (keys.length < 7) {
+                n = keys.length;
+            } else {
+                n = 7;
+            }
+            // for (var key of Object.keys(top_rare)){
+            for (var i=0; i < n; i++) {
+                var key = keys[i];
+                console.log(key,top_uncommon[key]);
+                let num = top_uncommon[key]
+                let imgLink = `${set_format.substring(0,3)}/card/${key}.png`
+                    const elem = document.querySelector(selector)
+                    elem.innerHTML += `
+                    <figure>
+                    <div class='figure-search-text'>"${key}"</div>
+                    <img src="${imgLink}" alt="${key} ${num}% (uncommon #${i+1})" style="width: 8.9vw; min-width: 45px;">
+                    <figcapsmall>${num}%</figcapsmall>
+                    </figure>
+                    `;
             }
             document.querySelector(selector).innerHTML += `<br>`;
+
+            //top 10 common
+            console.log(data.topcards_common);
+            let top_common = data.topcards_common;
+            var keys = Object.keys(top_common);
+            var n;
+            if (keys.length < 10) {
+                n = keys.length;
+            } else {
+                n = 10;
+            }
+            // for (var key of Object.keys(top_rare)){
+            for (var i=0; i < n; i++) {
+                var key = keys[i];
+                console.log(key,top_common[key]);
+                let num = top_common[key]
+                let imgLink = `${set_format.substring(0,3)}/card/${key}.png`
+                    const elem = document.querySelector(selector)
+                    elem.innerHTML += `
+                    <figure>
+                    <div class='figure-search-text'>"${key}"</div>
+                    <img src="${imgLink}" alt="${key} ${num}% (common #${i+1})" style="width: 8.9vw; min-width: 45px;">
+                    <figcapsmall>${num}%</figcapsmall>
+                    </figure>
+                    `;
+            }
+
+            document.querySelector(selector).innerHTML += `<br>`;
+
         })
 }
 
@@ -130,7 +172,6 @@ function generateSplashHTML(set_format,color) {
         .then(response => response.json())
         .then(data => {
             console.log(data[color]);
-            // let num = data[color]['deck_count']
             const elem = document.querySelector(selector)
             elem.innerHTML += `
             Cards worth splashing:
@@ -142,15 +183,17 @@ function generateSplashHTML(set_format,color) {
             for (var key of Object.keys(splash_cards)){
                 console.log(key,splash_cards[key]);
                 let num = splash_cards[key]
-                let imgLink = `${set_format.substring(0,3)}/card/${key}.png`
-                    const elem = document.querySelector(selector)
-                    elem.innerHTML += `
-                    <figure>
-                    <div class='figure-search-text'>"${key}"</div>
-                    <img src="${imgLink}" alt="${key} ${num}% (splash)" style="width: 8.9vw; min-width: 45px;">
-                    <figcapsmall>${num}%</figcapsmall>
-                    </figure>
-                    `;
+                if (num>=10) {
+                    let imgLink = `${set_format.substring(0,3)}/card/${key}.png`
+                        // const elem = document.querySelector(selector)
+                        elem.innerHTML += `
+                        <figure>
+                        <div class='figure-search-text'>"${key}"</div>
+                        <img src="${imgLink}" alt="${key} ${num}% (splash)" style="width: 8.9vw; min-width: 45px;">
+                        <figcapsmall>${num}%</figcapsmall>
+                        </figure>
+                        `;
+                }
             }
            elem.innerHTML += `<hr>`
         })
