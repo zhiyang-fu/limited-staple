@@ -12,7 +12,7 @@ body {
   line-height: 1.5em;
   padding: 1em;
   margin: auto;
-  max-width: 100em;
+  max-width: 140em;
   background: #fefefe;
 }
 
@@ -410,7 +410,7 @@ figcaption {
 }
 figcapsmall {
   color: white;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bolder;
   position: absolute;
   bottom: 5.3%;

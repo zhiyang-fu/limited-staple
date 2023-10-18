@@ -102,7 +102,7 @@ function generateTop5HTML(set_format,color) {
                     elem.innerHTML += `
                     <figure>
                     <div class='figure-search-text'>"${key}"</div>
-                    <img src="${imgLink}" alt="${key} ${num}% (rare #${i+1})" style="width: 8.9vw; min-width: 45px;">
+                    <img src="${imgLink}" alt="${key} ${num}% (rare #${i+1})" style="width: 9.5vw; min-width: 45px;">
                     <figcapsmall>${num}%</figcapsmall>
                     </figure>
                     `;
@@ -128,7 +128,7 @@ function generateTop5HTML(set_format,color) {
                     elem.innerHTML += `
                     <figure>
                     <div class='figure-search-text'>"${key}"</div>
-                    <img src="${imgLink}" alt="${key} ${num}% (uncommon #${i+1})" style="width: 8.9vw; min-width: 45px;">
+                    <img src="${imgLink}" alt="${key} ${num}% (uncommon #${i+1})" style="width: 9.5vw; min-width: 45px;">
                     <figcapsmall>${num}%</figcapsmall>
                     </figure>
                     `;
@@ -155,7 +155,7 @@ function generateTop5HTML(set_format,color) {
                     elem.innerHTML += `
                     <figure>
                     <div class='figure-search-text'>"${key}"</div>
-                    <img src="${imgLink}" alt="${key} ${num}% (common #${i+1})" style="width: 8.9vw; min-width: 45px;">
+                    <img src="${imgLink}" alt="${key} ${num}% (common #${i+1})" style="width: 9.5vw; min-width: 45px;">
                     <figcapsmall>${num}%</figcapsmall>
                     </figure>
                     `;
@@ -189,7 +189,7 @@ function generateSplashHTML(set_format,color) {
                         elem.innerHTML += `
                         <figure>
                         <div class='figure-search-text'>"${key}"</div>
-                        <img src="${imgLink}" alt="${key} ${num}% (splash)" style="width: 8.9vw; min-width: 45px;">
+                        <img src="${imgLink}" alt="${key} ${num}% (splash)" style="width: 9.5vw; min-width: 45px;">
                         <figcapsmall>${num}%</figcapsmall>
                         </figure>
                         `;
