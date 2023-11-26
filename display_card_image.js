@@ -98,25 +98,25 @@ function generateTop5HTML(set_format,color) {
                 console.log(key,top_rare[key]);
                 let num = top_rare[key]
                 let imgLink = `${set_format.substring(0,3)}/card/${key}.png`
-                    const elem = document.querySelector(selector)
+                    // <div class='figure-search-text'>"${key}"</div>
+                    // const elem = document.querySelector(selector)
                     elem.innerHTML += `
                     <figure>
-                    <div class='figure-search-text'>"${key}"</div>
-                    <img src="${imgLink}" alt="${key} ${num}% (rare #${i+1})" style="width: 9.5vw; min-width: 45px;">
+                    <img src="${imgLink}" alt="${key} ${num}% (rare #${i+1})" style="width: 15.5vw; min-width: 45px;">
                     <figcapsmall>${num}%</figcapsmall>
                     </figure>
                     `;
             }
 
-            //top 7 uncommon
+            //top 6 uncommon
             console.log(data.topcards_uncommon);
             let top_uncommon = data.topcards_uncommon;
             var keys = Object.keys(top_uncommon);
             var n;
-            if (keys.length < 7) {
+            if (keys.length < 6) {
                 n = keys.length;
             } else {
-                n = 7;
+                n = 6;
             }
             // for (var key of Object.keys(top_rare)){
             for (var i=0; i < n; i++) {
@@ -124,26 +124,26 @@ function generateTop5HTML(set_format,color) {
                 console.log(key,top_uncommon[key]);
                 let num = top_uncommon[key]
                 let imgLink = `${set_format.substring(0,3)}/card/${key}.png`
-                    const elem = document.querySelector(selector)
+                    // <div class='figure-search-text'>"${key}"</div>
+                    // const elem = document.querySelector(selector)
                     elem.innerHTML += `
                     <figure>
-                    <div class='figure-search-text'>"${key}"</div>
-                    <img src="${imgLink}" alt="${key} ${num}% (uncommon #${i+1})" style="width: 9.5vw; min-width: 45px;">
+                    <img src="${imgLink}" alt="${key} ${num}% (uncommon #${i+1})" style="width: 15.5vw; min-width: 45px;">
                     <figcapsmall>${num}%</figcapsmall>
                     </figure>
                     `;
             }
-            document.querySelector(selector).innerHTML += `<br>`;
+            // document.querySelector(selector).innerHTML += `<br>`;
 
-            //top 10 common
+            //top 9 common
             console.log(data.topcards_common);
             let top_common = data.topcards_common;
             var keys = Object.keys(top_common);
             var n;
-            if (keys.length < 10) {
+            if (keys.length < 9) {
                 n = keys.length;
             } else {
-                n = 10;
+                n = 9;
             }
             // for (var key of Object.keys(top_rare)){
             for (var i=0; i < n; i++) {
@@ -151,11 +151,11 @@ function generateTop5HTML(set_format,color) {
                 console.log(key,top_common[key]);
                 let num = top_common[key]
                 let imgLink = `${set_format.substring(0,3)}/card/${key}.png`
-                    const elem = document.querySelector(selector)
+                    // <div class='figure-search-text'>"${key}"</div>
+                    // const elem = document.querySelector(selector)
                     elem.innerHTML += `
                     <figure>
-                    <div class='figure-search-text'>"${key}"</div>
-                    <img src="${imgLink}" alt="${key} ${num}% (common #${i+1})" style="width: 9.5vw; min-width: 45px;">
+                    <img src="${imgLink}" alt="${key} ${num}% (common #${i+1})" style="width: 15.5vw; min-width: 45px;">
                     <figcapsmall>${num}%</figcapsmall>
                     </figure>
                     `;
@@ -186,10 +186,10 @@ function generateSplashHTML(set_format,color) {
                 if (num>=10) {
                     let imgLink = `${set_format.substring(0,3)}/card/${key}.png`
                         // const elem = document.querySelector(selector)
+                        // <div class='figure-search-text'>"${key}"</div>
                         elem.innerHTML += `
                         <figure>
-                        <div class='figure-search-text'>"${key}"</div>
-                        <img src="${imgLink}" alt="${key} ${num}% (splash)" style="width: 9.5vw; min-width: 45px;">
+                        <img src="${imgLink}" alt="${key} ${num}% (splash)" style="width: 15.5vw; min-width: 45px;">
                         <figcapsmall>${num}%</figcapsmall>
                         </figure>
                         `;
