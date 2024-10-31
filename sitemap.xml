@@ -4,7 +4,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://example.com/index.html</loc><lastmod>2024-02-22</lastmod><priority>1.0</priority></url>
-<url><loc>https://example.com/tradDraft.html</loc><lastmod>2024-02-22</lastmod><priority>1.0</priority></url>
-<url><loc>https://example.com/premierDraft.html</loc><lastmod>2024-02-22</lastmod><priority>1.0</priority></url>
+<url><loc>https://example.com/index.html</loc><lastmod>2024-10-30</lastmod><priority>1.0</priority></url>
+<url><loc>https://example.com/tradDraft.html</loc><lastmod>2024-10-30</lastmod><priority>1.0</priority></url>
+<url><loc>https://example.com/premierDraft.html</loc><lastmod>2024-10-30</lastmod><priority>1.0</priority></url>
 </urlset>

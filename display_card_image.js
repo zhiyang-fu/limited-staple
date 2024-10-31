@@ -97,7 +97,7 @@ function generateTop5HTML(set_format,color) {
                 var key = keys[i];
                 console.log(key,top_rare[key]);
                 let num = top_rare[key]
-                let imgLink = `${set_format.substring(0,3)}/card/${key}.png`
+                let imgLink = `${set_format.substring(0,8)}/card/${key}.png`
                     // <div class='figure-search-text'>"${key}"</div>
                     // const elem = document.querySelector(selector)
                     elem.innerHTML += `
@@ -123,7 +123,7 @@ function generateTop5HTML(set_format,color) {
                 var key = keys[i];
                 console.log(key,top_uncommon[key]);
                 let num = top_uncommon[key]
-                let imgLink = `${set_format.substring(0,3)}/card/${key}.png`
+                let imgLink = `${set_format.substring(0,8)}/card/${key}.png`
                     // <div class='figure-search-text'>"${key}"</div>
                     // const elem = document.querySelector(selector)
                     elem.innerHTML += `
@@ -150,7 +150,7 @@ function generateTop5HTML(set_format,color) {
                 var key = keys[i];
                 console.log(key,top_common[key]);
                 let num = top_common[key]
-                let imgLink = `${set_format.substring(0,3)}/card/${key}.png`
+                let imgLink = `${set_format.substring(0,8)}/card/${key}.png`
                     // <div class='figure-search-text'>"${key}"</div>
                     // const elem = document.querySelector(selector)
                     elem.innerHTML += `
@@ -184,7 +184,7 @@ function generateSplashHTML(set_format,color) {
                 console.log(key,splash_cards[key]);
                 let num = splash_cards[key]
                 if (num>=10) {
-                    let imgLink = `${set_format.substring(0,3)}/card/${key}.png`
+                    let imgLink = `${set_format.substring(0,8)}/card/${key}.png`
                         // const elem = document.querySelector(selector)
                         // <div class='figure-search-text'>"${key}"</div>
                         elem.innerHTML += `
